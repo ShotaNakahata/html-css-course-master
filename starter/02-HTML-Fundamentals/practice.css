@@ -1,4 +1,4 @@
-*{
+* {
   font-weight: bold;
 }
 body {
@@ -6,21 +6,24 @@ body {
   border: 3px solid gray;
   line-height: 1.5;
 }
-button{
+button {
   color: white;
   text-transform: uppercase;
   background-color: black;
+  border: none;
 }
-button:hover{
+button:hover {
   color: black;
   text-transform: uppercase;
   background-color: white;
 }
 
-article a{
+article a,
+article a:visited {
   color: black;
 }
-article a:hover{
+article a:hover,
+article a:active {
   text-decoration-line: none;
 }
 .header-text {
@@ -29,8 +32,12 @@ article a:hover{
   text-align: center;
 }
 
-.free-shipping {
+.shipping {
   text-transform: uppercase;
   font-weight: bold;
   color: rgba(0, 0, 10, 0.5);
+}
+
+.details-list {
+  list-style: square;
 }
