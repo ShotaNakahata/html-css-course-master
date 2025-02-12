@@ -5,12 +5,17 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
 }
 
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
 h1 {
   color: blue;
   font-size: 26px;
-
   text-transform: uppercase;
   font-style: italic;
 }
@@ -32,10 +37,56 @@ p {
 li {
   font-size: 13px;
 }
-footer p{
+footer p {
   font-size: 11px;
 }
 
-#author{
+#author {
   font-style: italic;
+}
+
+#copyright {
+  font-size: 13px;
+}
+
+.related {
+  list-style: none;
+}
+
+.related-author {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main-header {
+  background-color: #6c6c6c;
+}
+
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child{
+  color: red;
+}
+li:nth-child(even){
+  color: #1098ad;
+}
+
+a:link{
+  color:blue;
+  text-decoration: none;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color: red;
+}
+a:active{
+  background-color: black;
 }
