@@ -1,0 +1,36 @@
+*{
+  font-weight: bold;
+}
+body {
+  font-family: sans-serif;
+  border: 3px solid gray;
+  line-height: 1.5;
+}
+button{
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+}
+button:hover{
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+article a{
+  color: black;
+}
+article a:hover{
+  text-decoration-line: none;
+}
+.header-text {
+  font-size: 15px;
+  background-color: gray;
+  text-align: center;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 10, 0.5);
+}
