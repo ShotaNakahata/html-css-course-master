@@ -35,8 +35,14 @@ aside {
 article{
   margin-bottom: 60px;
 }
-nav {
+nav a{
   font-size: 18px;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:last-child{
+  margin-right: 0px;
 }
 h1,
 h2,
