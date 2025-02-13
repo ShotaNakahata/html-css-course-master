@@ -12,6 +12,10 @@ li {
   font-family: sans-serif;
   color: #444;
 }
+.container{
+  width: 500px;
+  margin: 0 auto;
+}
 .main-header {
   background-color: #6c6c6c;
   padding: 20px 40px;
