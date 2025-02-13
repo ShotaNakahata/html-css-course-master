@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -7,7 +12,25 @@ li {
   font-family: sans-serif;
   color: #444;
 }
-
+.main-header {
+  background-color: #6c6c6c;
+  padding: 20px 40px;
+  margin-bottom: 25px;
+}
+.post-header {
+  margin-bottom: 25px;
+}
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 25px 0;
+}
+article{
+  margin-bottom: 60px;
+}
+nav {
+  font-size: 18px;
+}
 h1,
 h2,
 h3 {
@@ -21,22 +44,36 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  margin-bottom: 25px;
 }
 h3 {
   font-size: 20px;
+  margin-bottom: 25px;
 }
 h4 {
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
 }
+
 p {
   font-size: 15px;
   line-height: 1.5;
+  margin-bottom: 5px;
+}
+ul,
+ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
 }
 li {
   font-size: 13px;
+  margin-bottom: 5px;
 }
+li:last-child {
+  margin-bottom: 0px;
+}
+
 footer p {
   font-size: 11px;
 }
@@ -58,35 +95,26 @@ footer p {
   font-weight: bold;
 }
 
-.main-header {
-  background-color: #6c6c6c;
-}
-
-aside {
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
 li:first-child {
   font-weight: bold;
 }
-li:last-child{
+li:last-child {
   color: red;
 }
-li:nth-child(even){
+li:nth-child(even) {
   color: #1098ad;
 }
 
-a:link{
-  color:blue;
+a:link {
+  color: blue;
   text-decoration: none;
 }
-a:visited{
-  color:blue;
+a:visited {
+  color: blue;
 }
-a:hover{
+a:hover {
   color: red;
 }
-a:active{
+a:active {
   background-color: black;
 }
