@@ -5,10 +5,22 @@
 body {
   font-family: sans-serif;
 }
-.product{
-  border:4px solid black;
+.product {
+  border: 4px solid black;
   width: 700px;
-  margin: 15px auto;
+  margin: 20px auto;
+  position: relative;
+}
+.sale {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: red;
+  padding: 0 5px;
+  text-align: center;
+  letter-spacing: 3px;
+  top: -20px;
+  left: -20px;
+  font-size: 20px;
 }
 .header-text {
   background-color: rgb(222, 222, 222);
@@ -21,10 +33,9 @@ button {
   text-transform: uppercase;
   background-color: black;
   border: none;
-  width:100%;
+  width: 100%;
   padding: 15px;
   border-top: 4px solid black;
-
 }
 button:hover {
   color: black;
@@ -52,14 +63,42 @@ article a:active {
   list-style: square;
   padding-left: 15px;
 }
-.details-list li{
+.details-list li {
   margin-bottom: 6px;
 }
 
-.details-list li:last-child{
+.details-list li:last-child {
   margin-bottom: 0px;
 }
-.more-information{
+.more-information {
   display: block;
+  margin-bottom: 15px;
+}
+.color-contents {
+  display: flex;
+}
+.color-content {
+  width: 25px;
+  height: 25px;
+  margin-left: 7px;
   margin-bottom: 10px;
+}
+.color-content:first-child{
+  margin-left: 0px;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.black {
+  background-color: black;
 }
