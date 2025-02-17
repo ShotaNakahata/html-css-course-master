@@ -1,34 +1,74 @@
-* {
-  padding: 0;
-  margin: 0;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: bold;
 }
-body {
-  font-family: sans-serif;
+p{
+  margin-bottom: 10px;
 }
-.product {
-  border: 4px solid black;
-  width: 900px;
-  margin: 20px auto;
+.product{
   position: relative;
+  width: 900px;
+  margin: 50px auto ;
+  border: 2px solid black;
 }
-.sale {
+h3{
+  margin-bottom: 10px;
+}
+.sale{
   position: absolute;
-  text-transform: uppercase;
   background-color: red;
-  padding: 0 5px;
+  width: 70px;
+  height: 30px;
   text-align: center;
-  letter-spacing: 3px;
-  top: -20px;
-  left: -20px;
-  font-size: 20px;
+  text-transform: uppercase;
+  top: -30px;
+  left: -40px;
 }
-.header-text {
-  background-color: rgb(222, 222, 222);
-  font-size: 20px;
+
+.header{
+  height: 70px;
+  background-color: gray;
+  /* padding: 3px 0px; */
+}
+
+.header-text{
   text-align: center;
-  padding: 15px;
+  line-height: 70px;
 }
-button {
+.button{
+  width:100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product-img{
+  width: 300px ;
+  height: auto;
+  float: left;
+}
+.color-content {
+  width: 25px;
+  height: 25px;
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+.info-1, .info-2 {
+  width: 290px; 
+  padding: 20px; 
+  float: left;
+}
+.product::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button {
   color: white;
   text-transform: uppercase;
   background-color: black;
@@ -66,7 +106,6 @@ article a:active {
 .details-list li {
   margin-bottom: 6px;
 }
-
 .details-list li:last-child {
   margin-bottom: 0px;
 }
@@ -74,18 +113,19 @@ article a:active {
   display: block;
   margin-bottom: 15px;
 }
-.color-contents {
+
+/* .info-2{
+  width: 200px;
+} */
+.color-contents{
   display: flex;
 }
-.color-content {
-  width: 25px;
-  height: 25px;
-  margin-left: 7px;
-  margin-bottom: 10px;
+.color-content{
+  margin-left: 30px;
 }
-
 .color-content:first-child{
   margin-left: 0px;
+  /* margin-right: 10px; */
 }
 
 .red {
@@ -102,4 +142,9 @@ article a:active {
 }
 .black {
   background-color: black;
+}
+.product::after {
+  content: "";
+  display: block;
+  clear: both;
 }
