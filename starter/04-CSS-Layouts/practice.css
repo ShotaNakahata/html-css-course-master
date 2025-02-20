@@ -15,6 +15,12 @@ body {
   margin: 50px auto;
   position: relative;
 }
+.product-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 
 .product-title {
   text-align: center;
