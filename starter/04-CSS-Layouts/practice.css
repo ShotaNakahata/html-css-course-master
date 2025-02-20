@@ -14,6 +14,11 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  /* Grid */
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  /* grid-template-rows: ; */
+  column-gap: 30px;
 }
 .product-price{
   display: flex;
@@ -28,21 +33,18 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
+  grid-column: 1/-1;
 }
 
 .container{
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  /* align-items: center; */
+  
 }
 .product-info{
   margin-top: 20px;
-  flex: 1;
+  grid-template-columns: 2/3;
 }
 .product-details{
   margin-top: 20px;
-  flex: 1;
 }
 .shipping {
   font-size: 12px;
@@ -127,6 +129,8 @@ body {
   padding: 15px;
   width: 100%;
   border-top: 4px solid black;
+  grid-column: 1/-1;
+
 }
 .add-cart:hover {
   color: #000;
