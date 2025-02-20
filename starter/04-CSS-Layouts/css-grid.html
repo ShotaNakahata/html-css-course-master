@@ -36,10 +36,17 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
+        /* width: 600px; */
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 200px 200px 100px 100px;
+        grid-template-rows: 300px 200px;
+        gap: 30px;
+        /* grid-auto-columns: 0; */
+        /* grid-template-columns: repeat(4, 1fr); 4列均等割り */
       }
 
       .container--2 {
@@ -53,6 +60,7 @@
         height: 600px;
 
         /* CSS GRID */
+        display: none;
       }
     </style>
   </head>
