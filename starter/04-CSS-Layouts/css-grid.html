@@ -42,9 +42,14 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 200px 200px 100px 100px;
-        grid-template-rows: 300px 200px;
-        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        /* grid-template-rows: 300px 200px; */
+        gap: 20px;
+        /* justify-content: center; */
+        /* justify-items: center; */
+        /* align-items:end; */
         /* grid-auto-columns: 0; */
         /* grid-template-columns: repeat(4, 1fr); 4列均等割り */
       }
