@@ -19,7 +19,7 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   color: #343a40;
   border-bottom: 8px solid #087f5b;
 }
@@ -47,22 +47,24 @@ h2 {
   column-gap: 80px;
 }
 .btn:link,
-.btn:visited{
+.btn:visited {
   background-color: #087f5b;
   color: #fff;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  border-radius: 100px;
 }
-.btn:hover,.btn:active{
+.btn:hover,
+.btn:active {
   background-color: #099268;
 }
-.btn--big{
+.btn--big {
   font-size: 18px;
   padding: 16px 32px;
 }
-.btn--small{
+.btn--small {
   font-size: 14px;
   padding: 8px 12px;
 }
@@ -102,7 +104,7 @@ img {
 
 /* FEATURES */
 .features-icon {
-  stroke:#087f5b;
+  stroke: #087f5b;
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
@@ -123,6 +125,7 @@ img {
   color: #fff;
   background-color: #087f5b;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -141,7 +144,14 @@ img {
   font-size: 18px;
   line-height: 1.6;
 }
-
+.chair {
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.chair img{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
 /* CHAIRS */
 .chair-box {
   padding: 24px;
@@ -151,7 +161,9 @@ h3 {
   margin-bottom: 24px;
   font-size: 20px;
 }
-
+img{
+  border-radius: 12px;
+}
 .chair-details {
   list-style: none;
   margin-bottom: 24px;
@@ -169,7 +181,7 @@ h3 {
 }
 
 .chair-icon {
-  stroke:#087f5b;
+  stroke: #087f5b;
   width: 24px;
   height: 24px;
 }
