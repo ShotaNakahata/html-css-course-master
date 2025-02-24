@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background-color: #e6fcf5;
+}
+.carousel{
+  background-color: #087f5b;
+  width: 800px;
+  margin: 100px auto;
+  border-radius:10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 32px 48px 32px 86px;
+  gap: 86px;
+  position: relative;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius:10px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+.testimonial-text{
+  color: #e6fcf5;
+  font-weight: 500px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.testimonial-author{
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+.testimonial-job{
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+/*controls*/
+.btn{
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.btn:hover{
+  
+}
+.btn-icon{
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+.btn--left{
+  left: 0;
+  transform: translate(-50%,-50%);
+}
+.btn--right{
+  right: 0;
+  transform: translate(50%,-50%);
+}
+.dots{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,32px);
+  display: flex;
+  gap: 12px;
+}
+.dot{
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot--fill{
+  background-color: #087f5b;
+}
