@@ -12,5 +12,24 @@ body {
 }
 table{
   width: 800px;
-  margin: 40px auto;
+  margin: 100px auto;
+  /* border: 2px solid black; */
+  border-collapse: collapse;
+  font-size: 15px;
+}
+th,td{
+  /* border: 2px solid black; */
+  padding: 16px 24px;
+  text-align: left;
+}
+thead th{
+  background-color: #087f5b;
+  color: #fff;
+  width: 25%;
+}
+tbody tr:nth-child(odd){
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even){
+  background-color: #e9ecef;
 }
