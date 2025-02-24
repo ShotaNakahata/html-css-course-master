@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background-color: #e6fcf5;
+}
+table{
+  width: 800px;
+  margin: 40px auto;
+}
