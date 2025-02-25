@@ -26,6 +26,21 @@ menu{
   grid-column: 2/-1;
   background-color: #7048e8;
   color: #fff;
+  display: flex;
+  /* justify-content: left; */
+  
+  gap: 12px;
+  align-items: center;
+  padding: 0 40px;
+}
+button{
+  background-color: #5f3dc4;
+  font-size: 16px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 aside{
   background-color: #e9ecef;
