@@ -12,9 +12,22 @@ html {
   /* background-color: red; */
   width: 1000px;
   /* width: 1200px; */
+  position: relative;
+}
+.header-container{
+  width: 1000px;
+  /* width: 1200px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.header-container-inner{
+  width: 50%;
 }
 nav {
-  background-color: green;
+  /* background-color: green; */
+  padding-top: 32px;
   font-size: 20px;
   font-weight: 700;
   display: flex;
@@ -23,6 +36,7 @@ nav {
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 p {
   font-size: 20px;
@@ -49,7 +63,11 @@ section{
   background-color: #f7f7f7;
 }
 header{
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(hero.jpg);
+  background-size: cover;
   height: 100vh;
+  color: #f7f7f7;
 }
+
 /* background-color: #e67e22; */
