@@ -59,6 +59,18 @@ Medium: 11px
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
+.container{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid{
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2-cols{
+  grid-template-rows: repeat(2,1fr);
+}
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -221,4 +233,9 @@ body {
 }
 .delivered-text span{
   color:#cf711f;
+}
+
+.section-how{
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
