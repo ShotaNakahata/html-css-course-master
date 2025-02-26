@@ -82,6 +82,9 @@ Medium: 11px
 .center-text{
   text-align: center;
 }
+.margin-bottom-md{
+  margin-bottom: 4.8rem !important;
+}
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -146,4 +149,36 @@ Medium: 11px
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+.list-item{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.link:link,.link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
