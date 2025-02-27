@@ -121,15 +121,17 @@ Medium: 11px
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
   font-weight: 600;
+  border: none;
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .btn--full:link,
 .btn--full:visited {

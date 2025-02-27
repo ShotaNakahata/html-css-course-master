@@ -165,7 +165,6 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;

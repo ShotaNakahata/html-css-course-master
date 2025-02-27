@@ -126,7 +126,7 @@ body {
 /* FEATURED IN SECTION */
 /**************************/
 
-.heading-featured-in{
+.heading-featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
@@ -135,11 +135,11 @@ body {
   color: #888;
   letter-spacing: 0.75px;
 }
-.logos{
+.logos {
   display: flex;
   justify-content: space-around;
 }
-.logos img{
+.logos img {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
@@ -150,29 +150,29 @@ body {
 .section-how {
   padding: 9.6rem 0;
 }
-.step-img-box{
+.step-img-box {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.step-img-box::after,.step-img-box::before{
+.step-img-box::after,
+.step-img-box::before {
   content: "";
   display: block;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
 }
-.step-img-box::before{
+.step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -2;
 }
-.step-img-box::after{
+.step-img-box::after {
   width: 45%;
   padding-bottom: 45%;
   background-color: #fae5d3;
@@ -181,17 +181,17 @@ body {
 .step-img {
   width: 35%;
 }
-.step-number{
+.step-number {
   font-size: 8.6rem;
   font-weight: 600;
-  color:#ddd;
+  color: #ddd;
   margin-bottom: 1.2rem;
 }
-.step-description{
+.step-description {
   font-size: 1.8rem;
   line-height: 1.8;
 }
-.section-featured{
+.section-featured {
   /* なぜここはmarginを使用しない？ */
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -199,32 +199,32 @@ body {
 /**************************/
 /* MEALS SECTION */
 /**************************/
-.section-meals{
+.section-meals {
   padding: 9.6rem 0;
 }
-.meal{
+.meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   transition: all 0.3s;
 }
-.meal:hover{
+.meal:hover {
   transform: translateY(-1.3rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
-.meal-img{
+.meal-img {
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   width: 100%;
 }
-.meal-content{
+.meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
-.meal-tags{
+.meal-tags {
   display: flex;
   gap: 0.4rem;
   margin-bottom: 12px;
 }
-.tag{
+.tag {
   background-color: #dae6bd;
   font-size: 1.2rem;
   font-weight: 600;
@@ -234,31 +234,31 @@ body {
   color: #333;
   display: inline-block;
 }
-.tag--vegetarian{
+.tag--vegetarian {
   background-color: #51cf66;
 }
-.tag--vegan{
+.tag--vegan {
   background-color: #94d82d;
 }
-.tag--paleo{
+.tag--paleo {
   background-color: #ffd43b;
 }
 
-.meal-title{
-  font-size:2.4rem ;
-  font-weight:600;
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
   margin-bottom: 3.2rem;
   color: #333;
 }
 
-.meal-attributes{
+.meal-attributes {
   list-style: none;
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.meal-attribute{
+.meal-attribute {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
@@ -270,7 +270,7 @@ body {
   color: #e67e22;
 }
 
-.all-recipes{
+.all-recipes {
   text-align: center;
   font-size: 1.8rem;
 }
@@ -278,13 +278,13 @@ body {
 /* TESTIMONIALS SECTION */
 /**************************/
 
-.section-testimonials{
+.section-testimonials {
   display: grid;
   background-color: #fdf2e9;
   /* ↓なぜこの方法で指定？gridをclassに入れなかった？ */
   grid-template-columns: 55fr 45fr;
 }
-.testimonials-container{
+.testimonials-container {
   padding: 9.6rem;
 }
 
@@ -294,59 +294,56 @@ body {
   row-gap: 4.8rem;
   column-gap: 8rem;
 }
-.gallery{
+.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
-.gallery-item{
+.gallery-item {
   overflow: hidden;
 }
-.gallery-item img{
+.gallery-item img {
   width: 100%;
   transition: all 0.4s;
 }
-.gallery-item img:hover{
-  transform:scale(1.1)
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
-.testimonial img{
+.testimonial img {
   display: block;
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
 
-.testimonial-text{
+.testimonial-text {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
-.testimonial-name{
+.testimonial-name {
   font-size: 1.6rem;
   color: #6f6f6f;
 }
 
-
 /**************************/
 /* MEALS SECTION */
 /**************************/
-.section-pricing{
+.section-pricing {
   padding: 9.6rem 0;
 }
-.princing-plan{
+.princing-plan {
   border-radius: 11px;
   width: 75%;
-  
-  
 }
-.princing-plan--starter{
+.princing-plan--starter {
   /* background-color:#dae6bd; */
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
   justify-self: end;
 }
-.princing-plan--complete{
+.princing-plan--complete {
   position: relative;
   background-color: #fdf2e9;
   border: 2px solid #fdf2e9;
@@ -354,42 +351,41 @@ body {
   overflow: hidden;
   justify-self: start;
 }
-.plan-header{
+.plan-header {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
   text-align: center;
   margin-bottom: 4.8rem;
 }
-.plan-name{
+.plan-name {
   color: #cf711f;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 3.2rem;
 }
-.plan-price{
-  font-size:6.2rem ;
+.plan-price {
+  font-size: 6.2rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 1.6rem;
-  
 }
-.plan-price span{
+.plan-price span {
   font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
-.plan-text{
+.plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
 }
-.plan-sing-up{
+.plan-sing-up {
   text-align: center;
   margin-top: 4.8rem;
 }
-.princing-plan--complete::after{
+.princing-plan--complete::after {
   content: "Best value";
   background-color: #ffd43b;
   text-transform: uppercase;
@@ -404,29 +400,108 @@ body {
   /* rotate */
   transform: rotate(45deg);
 }
-.plan-details{
+.plan-details {
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
-.feature-title{
+.feature-title {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.6rem;
   color: 1.6rem;
-  
 }
-.feature-text{
+.feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
 }
-.feature-icon{
+.feature-icon {
   color: #e67e22;
   height: 3.2rem;
   width: 3.2rem;
-  padding:1.6rem;
+  padding: 1.6rem;
   border-radius: 50%;
   background-color: #fdf2e9;
   margin-bottom: 3.2rem;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+.section-cta{
+  padding: 4.8rem 0 12.8rem;
+}
+.cta {
+  /* padding: 4.8rem 6.4rem 6.4rem 6.4rem; */
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  /* background-color: #e67e22; */
+  overflow: hidden;
+  /* background-image:linear-gradient(to right bottom, #eb984e, #e67e22) */
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  background-color: #e67e22;
+  color: #452627;
+}
+.cta .heading-secondary {
+  color: #452627;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box img {
+  width: 100%;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+.cta-form label{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,.cta-form select{
+  width: 100%;
+  padding: 1.2rem;
+  color: #45260a;
+  border-radius: 9px;
+  border: none;
+  background-color: #fdf2e9;
+  font-size: 1.8rem;
+}
+/* #45260a */
+.btn--form{
+  background-color:#45260a;
+  color: #fdf2e9;
+  padding: 1.2rem !important;
+  align-self: end;
+}
+
+.btn--form:hover{
+  background-color: #fff;
+  color: #555
 }
