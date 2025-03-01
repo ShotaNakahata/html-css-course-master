@@ -564,7 +564,20 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
 }
-.footer-link{
+.footer-link:link,.footer-link:visited{
+  text-decoration: none;
+  color:#767676 ;
+  transition: all 0.3s;
+}
+.footer-link:hover,.footer-link:active{
   text-decoration: none;
   color:#555 ;
+}
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
