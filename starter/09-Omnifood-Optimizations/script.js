@@ -36,6 +36,25 @@ btnEl.addEventListener("click", () => {
   header.classList.toggle("nav-open")
 })
 
+
+// STICKY
+
+const obs = new IntersectionObserver((entries)=>{
+  const ent = entries[0]
+  console.log(ent);
+  if(ent.isIntersecting===false){
+    document.body.classList.add("sticky")
+  }else if(ent.isIntersecting!==false){
+    document.body.classList.remove("sticky")
+  }
+},{
+  root:null,
+  threshold:0,
+  rootMargin:"-80px"
+})
+obs.observe(document.querySelector(".section-hero"))
+
+// 
 const allLinks = document.querySelectorAll("a:link")
 allLinks.forEach((link) => {
   link.addEventListener("click", () => {
