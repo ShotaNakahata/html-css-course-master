@@ -1,5 +1,62 @@
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
+const myname = "NAKAHATA"
+const h1 = document.querySelector(".heading-primary")
+// h1.addEventListener("click", () => {
+//   if (h1.style.backgroundColor === "red") {
+//     h1.textContent = "A healthy meal delivered to your door, every single day"
+//     h1.style.backgroundColor = null
+//     h1.style.padding = 0
+//   } else {
+//     h1.textContent = myname
+//     h1.style.backgroundColor = "red"
+//     h1.style.padding = "5rem"
+//   }
+// })
+let year = document.querySelector(".year")
+const currentYear = new Date().getFullYear()
+year.textContent = currentYear
+// const closeEl = document.getElementsByName("close-outline")[0]
+// const menuEl = document.getElementsByName("menu-outline")[0]
+// const header = document.querySelector(".header")
+// // nav-open
+// menuEl.addEventListener("click", () => {
+//   menuEl.style.display = "none"
+//   closeEl.style.display = "block"
+//   header.classList.add("nav-open")
+// })
+// closeEl.addEventListener("click",()=>{
+//   menuEl.style.display = "block"
+//   closeEl.style.display = "none"
+//   header.classList.remove("nav-open")
+// })
+const header = document.querySelector(".header")
+const btnEl = document.querySelector(".btn-mobile-nav")
+btnEl.addEventListener("click", () => {
+  header.classList.toggle("nav-open")
+})
+
+const allLinks = document.querySelectorAll("a:link")
+allLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const href = link.getAttribute("href")
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    } else if ((href !== "#" && href.startsWith("#"))) {
+      const hrefEl = document.querySelector(href);
+      hrefEl.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if(link.classList.contains("main-nav-link")){
+      console.log("have main-nav-link")
+      header.classList.toggle("nav-open")
+    }
+  })
+})
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
